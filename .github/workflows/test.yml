@@ -1,0 +1,57 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.11"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install build -e '.[test]'
+      - run: pytest
+      - run: python -m build --outdir build-artifacts
+      - name: Check distribution contents
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import tarfile
+          import zipfile
+
+          archives = sorted(Path("build-artifacts").iterdir())
+          if len(archives) != 2:
+              raise SystemExit(f"expected sdist and wheel, found {archives}")
+          for archive in archives:
+              if archive.suffix == ".whl":
+                  with zipfile.ZipFile(archive) as handle:
+                      names = handle.namelist()
+              else:
+                  with tarfile.open(archive, "r:gz") as handle:
+                      names = handle.getnames()
+              prohibited = [
+                  name
+                  for name in names
+                  if "/responses/" in f"/{name}"
+                  or Path(name).suffix.lower() in {".h5", ".hdf5", ".keras"}
+              ]
+              if prohibited:
+                  raise SystemExit(
+                      f"prohibited files in {archive.name}: {prohibited}"
+                  )
+          PY
+      - run: |
+          bash -n \
+            scripts/slurm/generate_universe_task.sh \
+            scripts/slurm/run_manifest_task.sh \
+            scripts/slurm/run_shard.sh \
+            scripts/slurm/submit_array.sh \
+            scripts/slurm/submit_universe.sh \
+            scripts/validate_outputs.sh
