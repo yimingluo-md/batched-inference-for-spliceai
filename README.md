@@ -11,6 +11,31 @@ and transcript.
 This is an independent research project. It is not affiliated with or endorsed
 by Illumina.
 
+## Motivation
+
+Illumina's 2019 GRCh38 precomputed SpliceAI scores enable efficient annotation
+but were generated using an older transcript set and include errors introduced
+by transcript selection and genome-build liftover. [Martin-Geary et
+al.](https://doi.org/10.1101/2025.08.27.25334471) reported that these issues
+affect 8.34% of theoretical SNVs and SpliceAI accuracy in 34.98% of evaluated
+disease-associated genes, potentially causing clinically relevant
+splice-altering variants to be missed. The [Broad SpliceAI
+Lookup](https://spliceailookup.broadinstitute.org/) addresses several
+limitations by recomputing scores with updated annotations and supporting
+masked predictions with a 500-nt maximum distance, but its public service is
+intentionally limited to a few queries per user per minute and therefore cannot
+support genome-wide annotation. Ensembl provides updated MANE v1.4-based GRCh38
+scores, but [only for
+SNVs](https://www.ensembl.org/info/docs/tools/vep/script/vep_plugins.html);
+indel annotation still relies on the older Illumina resource. Increasing the
+maximum distance from 50 to 500 nt broadens the region in which SpliceAI can
+report predicted splice-site changes and may improve sensitivity to clinically
+relevant distal events ([Pitsava et
+al.](https://doi.org/10.1016/j.gim.2025.101574)). This project therefore
+enables reproducible, high-throughput generation of masked (`M=1`), `D=500`
+SpliceAI scores for all SNVs and small indels using current MANE Select v1.5
+transcripts.
+
 ## Status
 
 - Implementation: upstream-compatibility and orchestration corrections applied
