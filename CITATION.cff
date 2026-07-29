@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Batched inference for SpliceAI"
+message: "Please cite this software and the original SpliceAI publication."
+type: software
+authors:
+  - family-names: Luo
+    given-names: Yiming
+version: 0.1.0rc4
+date-released: 2026-07-29
+license: GPL-3.0-or-later
+repository-code: "https://github.com/yimingluo-md/batched-inference-for-spliceai"
+references:
+  - type: article
+    title: "Predicting Splicing from Primary Sequence with Deep Learning"
+    authors:
+      - family-names: Jaganathan
+        given-names: Kishore
+    year: 2019
+    journal: Cell
+    doi: 10.1016/j.cell.2018.12.015

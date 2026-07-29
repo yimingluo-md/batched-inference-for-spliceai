@@ -1,0 +1,13 @@
+[
+  {
+    "candidate": "validation.fixed.gencode.opt.indel.5k.25977792.output.vcf",
+    "records": 5000,
+    "identity_different": 0,
+    "annotations_different": 36,
+    "annotation_entries_missing": 0,
+    "score_fields_different": 1,
+    "max_score_difference": 0.010000000000000009,
+    "position_fields_different": 38,
+    "nontrivial_position_fields_different": 0
+  }
+]

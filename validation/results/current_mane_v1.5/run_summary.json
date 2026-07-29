@@ -1,0 +1,82 @@
+{
+  "date": "2026-07-28",
+  "parameters": {
+    "distance": 500,
+    "mask": 1,
+    "batch_size": 256,
+    "chunk_records": 4096,
+    "tf32_enabled": false
+  },
+  "software": {
+    "runner_version": "0.1.0rc3",
+    "optimized_validation_git_commit": "6c279a5fe16d1a64f593cf54003ba028d6bc3a83",
+    "optimized_comparison_git_commit": "b1068905be6cde7b8e59e291af119c62804a6626",
+    "official_wrapper_git_commit": "2b6b4ced3bcfadfaa717d10c33ab1678aa19d6da",
+    "spliceai_version": "1.3.1",
+    "tensorflow_version": "2.9.1"
+  },
+  "assets": {
+    "container_sha256": "b089f4ed627f5647a868f33d9f34d4a6dac8cab9166ebddd77a994ace746cef6",
+    "reference_sha256": "d2b7be348fb20af46461855faec64dfbd21532620bd125783df050180446055e",
+    "annotation_release": "MANE Select v1.5",
+    "annotation_source_sha256": "71d4b3c89c9d948683bf0db5d81b00d9ae9f3b943177b74cbd87e68f08e34d66",
+    "annotation_sha256": "e323dddd489bcde6b5016776ccb1dd6955bb62c5af576c120f7b9815be2bdd53"
+  },
+  "platform": {
+    "gpu_model": "NVIDIA A100-SXM4-80GB",
+    "driver_version": "580.126.09"
+  },
+  "optimized_runs": {
+    "snv_25000": {
+      "records": 25000,
+      "scored_records": 16509,
+      "elapsed_seconds": 226.76,
+      "output_sha256": "042bd9a286445eecda74488328ddafbb39b2b4d6f9cdb827347b6ed011d41339"
+    },
+    "indel_25000": {
+      "records": 25000,
+      "scored_records": 15476,
+      "elapsed_seconds": 203.66,
+      "output_sha256": "f93aced1dd78249e91d147882fbe5a506436e10a2b7f4ac8d0499e082e60c787"
+    }
+  },
+  "official_comparison": {
+    "snv_records": 10000,
+    "indel_records": 10000,
+    "snv_official_elapsed_seconds": 2643.36,
+    "snv_optimized_elapsed_seconds": 101.03,
+    "indel_official_elapsed_seconds": 2606.60,
+    "indel_optimized_elapsed_seconds": 102.01,
+    "record_identity_differences": 0,
+    "annotation_differences": 0,
+    "score_field_differences": 0,
+    "position_field_differences": 0,
+    "maximum_score_difference": 0.0
+  },
+  "deterministic_repeat": {
+    "snv_records": 25000,
+    "snv_repeat_output_sha256": "042bd9a286445eecda74488328ddafbb39b2b4d6f9cdb827347b6ed011d41339",
+    "indel_records": 25000,
+    "indel_repeat_output_sha256": "f93aced1dd78249e91d147882fbe5a506436e10a2b7f4ac8d0499e082e60c787",
+    "byte_identical": true
+  },
+  "broad_lookup": {
+    "queries": 64,
+    "comparisons_performed": 64,
+    "snvs": 32,
+    "indels": 32,
+    "plus_strand": 32,
+    "minus_strand": 32,
+    "primary_chromosomes": 24,
+    "score_field_differences": 0,
+    "position_field_differences": 0,
+    "maximum_score_difference": 0.0,
+    "tls_certificate_verification": true,
+    "passed": true
+  },
+  "restart_smoke_test": {
+    "records": 64,
+    "first_run_completed": true,
+    "second_run_skipped_after_verification": true
+  }
+}

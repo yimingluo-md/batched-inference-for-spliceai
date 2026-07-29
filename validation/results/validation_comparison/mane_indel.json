@@ -1,0 +1,13 @@
+[
+  {
+    "candidate": "validation.fixed.mane.opt.indel.5k.25977793.output.vcf",
+    "records": 5000,
+    "identity_different": 0,
+    "annotations_different": 25,
+    "annotation_entries_missing": 0,
+    "score_fields_different": 5,
+    "max_score_difference": 0.010000000000000002,
+    "position_fields_different": 22,
+    "nontrivial_position_fields_different": 0
+  }
+]

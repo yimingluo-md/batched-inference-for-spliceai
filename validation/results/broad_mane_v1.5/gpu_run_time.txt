@@ -1,0 +1,52 @@
+2026-07-25 07:14:52.270417: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-07-25 07:14:55.449346: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 79033 MB memory:  -> device: 0, name: NVIDIA A100-SXM4-80GB, pci bus id: 0000:07:00.0, compute capability: 8.0
+<PYTHON_ENV>/pyfaidx/__init__.py:530: RuntimeWarning: The FASTA index is older than the reference FASTA.
+  ), RuntimeWarning
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+2026-07-25 07:14:56,826 WARNING No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+2026-07-25 07:14:57,876 WARNING No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+2026-07-25 07:14:58,928 WARNING No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+2026-07-25 07:15:00,055 WARNING No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+2026-07-25 07:15:01,100 WARNING No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+2026-07-25 07:15:04.512470: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8201
+2026-07-25 07:15:07.712301: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2026-07-25 07:15:07.714953: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2026-07-25 07:15:07.714968: W tensorflow/stream_executor/gpu/asm_compiler.cc:80] Couldn't get ptxas version string: INTERNAL: Couldn't invoke ptxas --version
+2026-07-25 07:15:07.717176: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2026-07-25 07:15:07.717221: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: Failed to launch ptxas
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7fffa2f519e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-07-25 07:15:13,209 WARNING 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7fffa2f519e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7fff593caf80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-07-25 07:15:14,659 WARNING 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7fff593caf80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-07-25 07:15:20,470 INFO processed=64 elapsed_seconds=19.4 variants_per_second=3.30
+	Command being timed: "<CONTAINER_RUNTIME> exec --nv <SPLICEAI_CONTAINER> python <RUNNER> -I <INPUT_VCF> -O <OUTPUT_VCF> -R <REFERENCE_FASTA> -A <MANE_ANNOTATION> -D 500 -M 1 --batch-size 64 --chunk-records 128"
+	User time (seconds): 19.61
+	System time (seconds): 5.87
+	Percent of CPU this job got: 64%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6145884
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6152
+	Minor (reclaiming a frame) page faults: 775538
+	Voluntary context switches: 21758
+	Involuntary context switches: 215372
+	Swaps: 0
+	File system inputs: 1712128
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

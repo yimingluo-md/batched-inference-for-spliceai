@@ -1,0 +1,5 @@
+artifact	records	primary_contigs	sha256
+stratified.indel.25k.vcf	25000	24	a4b7e69fa8024922861d37ccc7d8e826de14e6a010613c621f82218c4976de2d
+stratified.indel.5k.vcf	5000	24	a094e21ae9aecc1a873ddc3bd9f3deefb3cb65403955bc3b53408fc366c4b394
+stratified.snv.25k.vcf	25000	24	4a0a1a5bb419b5fead61637c7b716f97ddaa8d838e1d0fe21d80c4cad58b4946
+stratified.snv.5k.vcf	5000	24	6e81eb0e2fefbf2538ea2b35c2a17fc41fd3618d74d70e9229700ac3cd45eade

@@ -1,0 +1,2388 @@
+{
+  "summary": {
+    "endpoint": "https://spliceai-38-xwkwwwxdwq-uc.a.run.app/spliceai/",
+    "distance": 500,
+    "mask": 1,
+    "queries": 64,
+    "matched_mane_select": 64,
+    "response_parameters_match": 64,
+    "comparisons_performed": 64,
+    "local_unscored": 0,
+    "score_fields_different": 0,
+    "max_score_difference": 0.0,
+    "position_fields_different": 0,
+    "certificate_verification_disabled": false,
+    "passed": true,
+    "failure_reasons": []
+  },
+  "results": [
+    {
+      "variant": "chr1-69091-A-C",
+      "gene": "OR4F5",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000641515.2",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -54,
+        42,
+        2,
+        -1
+      ],
+      "broad_positions": [
+        -54,
+        42,
+        2,
+        -1
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr1-10636604-T-TA",
+      "gene": "CASZ1",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000377022.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -2,
+        35,
+        145,
+        433
+      ],
+      "broad_positions": [
+        -2,
+        35,
+        145,
+        433
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr1-11663196-GATCC-G",
+      "gene": "FBXO44",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000251547.10",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.02,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.02,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -51,
+        -54,
+        -268,
+        -465
+      ],
+      "broad_positions": [
+        -51,
+        -54,
+        -268,
+        -465
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr2-38814-T-TA",
+      "gene": "FAM110C",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000327669.5",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -2,
+        450,
+        303,
+        446
+      ],
+      "broad_positions": [
+        -2,
+        450,
+        303,
+        446
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr2-24491932-G-A",
+      "gene": "NCOA1",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000348332.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.02,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.02,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -53,
+        64,
+        -360,
+        256
+      ],
+      "broad_positions": [
+        -53,
+        64,
+        -360,
+        256
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr2-70900590-C-CA",
+      "gene": "VAX2",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000234392.3",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -7,
+        396,
+        278,
+        271
+      ],
+      "broad_positions": [
+        -7,
+        396,
+        278,
+        271
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr3-3069549-A-AA",
+      "gene": "IL5RA",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000446632.7",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -54,
+        421,
+        476,
+        188
+      ],
+      "broad_positions": [
+        -54,
+        421,
+        476,
+        188
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr3-12004402-G-A",
+      "gene": "SYN2",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000621198.5",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        185,
+        112,
+        491,
+        380
+      ],
+      "broad_positions": [
+        185,
+        112,
+        491,
+        380
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr3-38121711-CCAGC-C",
+      "gene": "DLEC1",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000308059.11",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.13,
+        0.0,
+        0.06,
+        0.0
+      ],
+      "broad_scores": [
+        0.13,
+        0.0,
+        0.06,
+        0.0
+      ],
+      "local_positions": [
+        111,
+        -83,
+        273,
+        -163
+      ],
+      "broad_positions": [
+        111,
+        -83,
+        273,
+        -163
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr4-3074681-G-A",
+      "gene": "HTT",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000355072.11",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        20,
+        202,
+        407,
+        97
+      ],
+      "broad_positions": [
+        20,
+        202,
+        407,
+        97
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr4-3419638-AAGAC-A",
+      "gene": "RGS12",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000336727.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        498,
+        263,
+        428,
+        388
+      ],
+      "broad_positions": [
+        498,
+        263,
+        428,
+        388
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr5-155773-C-A",
+      "gene": "PLEKHG4B",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000637938.2",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.01,
+        0.0,
+        0.01,
+        0.0
+      ],
+      "broad_scores": [
+        0.01,
+        0.0,
+        0.01,
+        0.0
+      ],
+      "local_positions": [
+        -192,
+        302,
+        30,
+        -86
+      ],
+      "broad_positions": [
+        -192,
+        302,
+        30,
+        -86
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr5-196871-A-AA",
+      "gene": "CCDC127",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000296824.4",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -5,
+        337,
+        460,
+        88
+      ],
+      "broad_positions": [
+        -5,
+        337,
+        460,
+        88
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr5-62577815-GAAAC-G",
+      "gene": "IPO11",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000325324.11",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        237,
+        -355,
+        -150,
+        320
+      ],
+      "broad_positions": [
+        237,
+        -355,
+        -150,
+        320
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr6-13614335-T-A",
+      "gene": "SIRT5",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000606117.2",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        267,
+        378,
+        467,
+        -17
+      ],
+      "broad_positions": [
+        267,
+        378,
+        467,
+        -17
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr6-13786557-T-TA",
+      "gene": "MCUR1",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000379170.9",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        37,
+        -2,
+        295,
+        369
+      ],
+      "broad_positions": [
+        37,
+        -2,
+        295,
+        369
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr6-26158146-A-AA",
+      "gene": "H2BC5",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000377777.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        198,
+        -11,
+        0,
+        142
+      ],
+      "broad_positions": [
+        198,
+        -11,
+        0,
+        142
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr7-192969-G-A",
+      "gene": "FAM20C",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000313766.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -283,
+        197,
+        -3,
+        245
+      ],
+      "broad_positions": [
+        -283,
+        197,
+        -3,
+        245
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr7-21899895-AAAGG-A",
+      "gene": "DNAH11",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000409508.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "local_positions": [
+        -331,
+        96,
+        242,
+        -447
+      ],
+      "broad_positions": [
+        -331,
+        96,
+        242,
+        -447
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr8-7821966-C-CA",
+      "gene": "DEFB105A",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000334773.7",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        182,
+        54,
+        -49,
+        167
+      ],
+      "broad_positions": [
+        182,
+        54,
+        -49,
+        167
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr8-11704204-G-A",
+      "gene": "GATA4",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000532059.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        478,
+        416,
+        100,
+        291
+      ],
+      "broad_positions": [
+        478,
+        416,
+        100,
+        291
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr8-54457935-G-GA",
+      "gene": "SOX17",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000297316.5",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        0,
+        444,
+        30,
+        332
+      ],
+      "broad_positions": [
+        0,
+        444,
+        30,
+        332
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr9-14521-T-A",
+      "gene": "WASHC1",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000696149.1",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        327,
+        258,
+        290,
+        393
+      ],
+      "broad_positions": [
+        327,
+        258,
+        290,
+        393
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr9-18927658-C-CA",
+      "gene": "SAXO1",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000380534.9",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        10,
+        155,
+        404,
+        475
+      ],
+      "broad_positions": [
+        10,
+        155,
+        404,
+        475
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr9-36136745-A-C",
+      "gene": "GLIPR2",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000377960.9",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        336,
+        472,
+        46,
+        132
+      ],
+      "broad_positions": [
+        336,
+        472,
+        46,
+        132
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr10-46953-G-A",
+      "gene": "TUBB8",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000568584.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -16,
+        384,
+        88,
+        436
+      ],
+      "broad_positions": [
+        -16,
+        384,
+        88,
+        436
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr10-42782801-G-A",
+      "gene": "BMS1",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000374518.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.01,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.01,
+        0.0
+      ],
+      "local_positions": [
+        426,
+        115,
+        283,
+        29
+      ],
+      "broad_positions": [
+        426,
+        115,
+        283,
+        29
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr11-202926-A-C",
+      "gene": "BET1L",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000382762.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        53,
+        50,
+        73,
+        367
+      ],
+      "broad_positions": [
+        53,
+        50,
+        73,
+        367
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr11-5777654-CTTGA-C",
+      "gene": "OR52N5",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000641181.1",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        284,
+        280,
+        375,
+        11
+      ],
+      "broad_positions": [
+        284,
+        280,
+        375,
+        11
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr11-44047981-T-A",
+      "gene": "ACCSL",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000378832.1",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        98,
+        15,
+        53,
+        248
+      ],
+      "broad_positions": [
+        98,
+        15,
+        53,
+        248
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr12-160926-G-A",
+      "gene": "IQSEC3",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000538872.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        100,
+        -80,
+        -119,
+        200
+      ],
+      "broad_positions": [
+        100,
+        -80,
+        -119,
+        200
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr12-190081-T-A",
+      "gene": "SLC6A12",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000684302.1",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        387,
+        -2,
+        21,
+        280
+      ],
+      "broad_positions": [
+        387,
+        -2,
+        21,
+        280
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr12-6965352-T-TA",
+      "gene": "PHB2",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000535923.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        354,
+        60,
+        344,
+        454
+      ],
+      "broad_positions": [
+        354,
+        60,
+        344,
+        454
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr13-19173772-T-A",
+      "gene": "TUBA3C",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000400113.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        48,
+        387,
+        17,
+        471
+      ],
+      "broad_positions": [
+        48,
+        387,
+        17,
+        471
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr13-19633681-G-A",
+      "gene": "MPHOSPH8",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000361479.10",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        105,
+        459,
+        390,
+        247
+      ],
+      "broad_positions": [
+        105,
+        459,
+        390,
+        247
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr14-20687764-T-A",
+      "gene": "RNASE4",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000555835.3",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -460,
+        33,
+        -329,
+        -193
+      ],
+      "broad_positions": [
+        -460,
+        33,
+        -329,
+        -193
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr14-21210534-A-C",
+      "gene": "HNRNPC",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000553300.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -45,
+        -26,
+        -45,
+        -6
+      ],
+      "broad_positions": [
+        -45,
+        -26,
+        -45,
+        -6
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr14-23058567-A-AA",
+      "gene": "ACIN1",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000605057.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        236,
+        107,
+        -5,
+        247
+      ],
+      "broad_positions": [
+        236,
+        107,
+        -5,
+        247
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr15-20531856-G-A",
+      "gene": "GOLGA6L6",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000619213.1",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        41,
+        240,
+        359,
+        173
+      ],
+      "broad_positions": [
+        41,
+        240,
+        359,
+        173
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr15-30552078-A-C",
+      "gene": "GOLGA8Q",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000562783.2",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        363,
+        465,
+        47,
+        464
+      ],
+      "broad_positions": [
+        363,
+        465,
+        47,
+        464
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr15-34525207-T-TA",
+      "gene": "GOLGA8B",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000683415.1",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        174,
+        -80,
+        430,
+        -96
+      ],
+      "broad_positions": [
+        174,
+        -80,
+        430,
+        -96
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr16-46407-A-C",
+      "gene": "POLR3K",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000293860.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        309,
+        -5,
+        276,
+        172
+      ],
+      "broad_positions": [
+        309,
+        -5,
+        276,
+        172
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr16-4695511-G-A",
+      "gene": "NUDT16L1",
+      "strand": "+",
+      "type": "SNV",
+      "broad_transcript": "ENST00000304301.11",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -36,
+        0,
+        125,
+        -434
+      ],
+      "broad_positions": [
+        -36,
+        0,
+        125,
+        -434
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr17-160542-C-A",
+      "gene": "DOC2B",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000613549.3",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        405,
+        -195,
+        2,
+        307
+      ],
+      "broad_positions": [
+        405,
+        -195,
+        2,
+        307
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr17-3896592-T-TA",
+      "gene": "P2RX1",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000225538.4",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        2,
+        50,
+        436,
+        418
+      ],
+      "broad_positions": [
+        2,
+        50,
+        436,
+        418
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr17-7425616-A-AA",
+      "gene": "SPEM2",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000333870.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        293,
+        377,
+        210,
+        292
+      ],
+      "broad_positions": [
+        293,
+        377,
+        210,
+        292
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr18-158608-G-GA",
+      "gene": "USP14",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000261601.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.01,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.01,
+        0.0
+      ],
+      "local_positions": [
+        373,
+        50,
+        407,
+        413
+      ],
+      "broad_positions": [
+        373,
+        50,
+        407,
+        413
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr18-3496032-A-C",
+      "gene": "DLGAP1",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000315677.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        88,
+        -3,
+        41,
+        -31
+      ],
+      "broad_positions": [
+        88,
+        -3,
+        41,
+        -31
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr18-10671527-T-TA",
+      "gene": "PIEZO2",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000674853.1",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        189,
+        -241,
+        2,
+        -99
+      ],
+      "broad_positions": [
+        189,
+        -241,
+        2,
+        -99
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr19-107461-A-AA",
+      "gene": "OR4F17",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000585993.3",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.04,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.04,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -11,
+        12,
+        -304,
+        94
+      ],
+      "broad_positions": [
+        -11,
+        12,
+        -304,
+        94
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr19-281043-T-A",
+      "gene": "PLPP2",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000434325.7",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        478,
+        24,
+        272,
+        315
+      ],
+      "broad_positions": [
+        478,
+        24,
+        272,
+        315
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr20-87710-A-AA",
+      "gene": "DEFB125",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000382410.3",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -29,
+        -5,
+        57,
+        30
+      ],
+      "broad_positions": [
+        -29,
+        -5,
+        57,
+        30
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr20-187853-T-A",
+      "gene": "DEFB128",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000334391.5",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        265,
+        37,
+        98,
+        204
+      ],
+      "broad_positions": [
+        265,
+        37,
+        98,
+        204
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr20-1564494-ACTTT-A",
+      "gene": "SIRPB1",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000381605.9",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        -186,
+        459,
+        -323,
+        321
+      ],
+      "broad_positions": [
+        -186,
+        459,
+        -323,
+        321
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr21-14108813-T-A",
+      "gene": "LIPI",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000681601.1",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        252,
+        267,
+        15,
+        253
+      ],
+      "broad_positions": [
+        252,
+        267,
+        15,
+        253
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr21-29004384-T-TA",
+      "gene": "RWDD2B",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000493196.2",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        177,
+        327,
+        340,
+        247
+      ],
+      "broad_positions": [
+        177,
+        327,
+        340,
+        247
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr21-30430230-A-AA",
+      "gene": "KRTAP13-4",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000334068.4",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.01,
+        0.0,
+        0.12,
+        0.0
+      ],
+      "broad_scores": [
+        0.01,
+        0.0,
+        0.12,
+        0.0
+      ],
+      "local_positions": [
+        192,
+        13,
+        12,
+        13
+      ],
+      "broad_positions": [
+        192,
+        13,
+        12,
+        13
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr22-16590751-T-A",
+      "gene": "CCT8L2",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000359963.4",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        439,
+        260,
+        68,
+        46
+      ],
+      "broad_positions": [
+        439,
+        260,
+        68,
+        46
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chr22-36913628-A-AA",
+      "gene": "CSF2RB",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000403662.8",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        140,
+        417,
+        324,
+        -27
+      ],
+      "broad_positions": [
+        140,
+        417,
+        324,
+        -27
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chrX-13773954-T-A",
+      "gene": "GPM6B",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000316715.9",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        232,
+        -244,
+        355,
+        -89
+      ],
+      "broad_positions": [
+        232,
+        -244,
+        355,
+        -89
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chrX-24149745-G-GA",
+      "gene": "ZFX",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000304543.10",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        385,
+        148,
+        385,
+        432
+      ],
+      "broad_positions": [
+        385,
+        148,
+        385,
+        432
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chrX-44148665-T-TA",
+      "gene": "EFHC2",
+      "strand": "-",
+      "type": "indel",
+      "broad_transcript": "ENST00000420999.2",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        229,
+        -24,
+        329,
+        126
+      ],
+      "broad_positions": [
+        229,
+        -24,
+        329,
+        126
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chrY-2786855-T-A",
+      "gene": "SRY",
+      "strand": "-",
+      "type": "SNV",
+      "broad_transcript": "ENST00000383070.2",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        306,
+        -2,
+        56,
+        125
+      ],
+      "broad_positions": [
+        306,
+        -2,
+        56,
+        125
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    },
+    {
+      "variant": "chrY-9337464-G-GA",
+      "gene": "TSPY4",
+      "strand": "+",
+      "type": "indel",
+      "broad_transcript": "ENST00000426950.6",
+      "response_parameters_match": true,
+      "matched_mane_select": true,
+      "comparison_status": "compared",
+      "local_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "broad_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_positions": [
+        463,
+        412,
+        75,
+        282
+      ],
+      "broad_positions": [
+        463,
+        412,
+        75,
+        282
+      ],
+      "score_fields_different": 0,
+      "max_score_difference": 0.0,
+      "position_fields_different": 0
+    }
+  ]
+}

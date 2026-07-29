@@ -1,0 +1,7 @@
+include CHANGELOG.md CITATION.cff CONTRIBUTING.md COPYRIGHT LICENSE NOTICE README.md SECURITY.md
+recursive-include docs *.md
+recursive-include scripts *.sh
+recursive-include tests *.py
+recursive-include validation *.md *.tsv *.json
+prune validation/results/broad_mane_v1.5/responses
+prune validation/results/current_mane_v1.5/broad/responses

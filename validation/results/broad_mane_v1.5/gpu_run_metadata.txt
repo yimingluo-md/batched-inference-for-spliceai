@@ -1,0 +1,8 @@
+run_id=25999220
+label=mane.v1.5.broad64
+batch_size=64
+chunk_records=128
+records=64
+NVIDIA A100-SXM4-80GB, 580.126.09, 81920 MiB
+output_records=64
+scored_records=64

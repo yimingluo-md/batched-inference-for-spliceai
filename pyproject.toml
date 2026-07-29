@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spliceai-batched"
+version = "0.1.0rc4"
+description = "High-throughput batching and restartable HPC orchestration for a separately installed SpliceAI runtime"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+  {name = "Yiming Luo"},
+]
+dependencies = [
+  "numpy>=1.21.5; python_version < '3.8'",
+  "numpy>=1.23; python_version >= '3.8'",
+  "pysam>=0.21",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.urls]
+Repository = "https://github.com/yimingluo-md/batched-inference-for-spliceai"
+Issues = "https://github.com/yimingluo-md/batched-inference-for-spliceai/issues"
+
+[project.optional-dependencies]
+test = [
+  "pytest>=7,<8; python_version < '3.8'",
+  "pytest>=8; python_version >= '3.8'",
+]
+
+[project.scripts]
+spliceai-batched = "spliceai_batched.cli:main"
+spliceai-batched-compare = "spliceai_batched.comparison:main"
+spliceai-batched-broad = "spliceai_batched.broad:main"
+spliceai-batched-sample = "spliceai_batched.sampling:main"
+spliceai-batched-mane = "spliceai_batched.mane:main"
+spliceai-batched-runtime = "spliceai_batched.runtime_manifest:main"
+spliceai-batched-official = "spliceai_batched.official:main"
+spliceai-batched-universe = "spliceai_batched.universe:main"
+
+[tool.setuptools]
+license-files = ["LICENSE", "COPYRIGHT", "NOTICE"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py37"
