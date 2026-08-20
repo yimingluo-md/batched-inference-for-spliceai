@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-20",
+  "release_version": "0.1.0rc4",
+  "public_git_commit": "a145b3c6aeee8fe020033a8a6a0e71816772e73a",
+  "variant_type": "SNV",
+  "annotation_release": "MANE.GRCh38.v1.5.Select",
+  "parameters": {
+    "distance": 500,
+    "mask": 1,
+    "batch_size": 1024,
+    "chunk_records": 16384
+  },
+  "universe": {
+    "plan_sha256": "abb790d6c4ab5fd9bf25eafe7a4ce53628f49488198e618978766867e20a37e9",
+    "generator_sha256": "565612a5afa6732107011c9319f2706e9560200081defcdf4cbedd05258c792b",
+    "records": 999999,
+    "input_sha256": "64c5bc10baf8bf7ddfaf2de9ed383d6ec622ba2200ff229732e41e26ae2ae0db",
+    "byte_identical_to_prior_pilot": true
+  },
+  "official_comparison": {
+    "records": 10000,
+    "identity_different": 0,
+    "annotations_different": 0,
+    "annotation_entries_missing": 0,
+    "score_fields_different": 0,
+    "max_score_difference": 0.0,
+    "position_fields_different": 0,
+    "nontrivial_position_fields_different": 0
+  },
+  "production_canary": {
+    "records": 999999,
+    "application_elapsed_seconds": 11889.2,
+    "scheduler_elapsed_seconds": 11910,
+    "variants_per_second": 84.11,
+    "output_sha256": "7bc6107feee10c85b719cf15a11a1c6c1f16d5bbbc12d7de31bc7b8d3811b338",
+    "byte_identical_to_prior_pilot": true,
+    "bgzf_valid": true,
+    "tabix_index_valid": true,
+    "record_count_valid": true,
+    "restart_skip_valid": true
+  },
+  "assets": {
+    "reference_sha256": "d2b7be348fb20af46461855faec64dfbd21532620bd125783df050180446055e",
+    "annotation_sha256": "e323dddd489bcde6b5016776ccb1dd6955bb62c5af576c120f7b9815be2bdd53",
+    "container_sha256": "b089f4ed627f5647a868f33d9f34d4a6dac8cab9166ebddd77a994ace746cef6",
+    "runner_sha256": "c1c066982ffd8de32e1bc9b127df62cabc7144ccfe3be44e29d37409e12b5fc5",
+    "runner_tree_sha256": "c89078291f3991f4be201b2ab648fbd95fe49c4320ebd5e88203487a64cf05c5"
+  }
+}

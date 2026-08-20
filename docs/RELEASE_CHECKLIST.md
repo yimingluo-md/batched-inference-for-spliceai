@@ -14,6 +14,8 @@
 - [x] Current MANE Select v1.5 primary annotation converted and checksum pinned
 - [x] Patch/alternate-only MANE transcripts explicitly excluded and counted
 - [x] Compare 64 balanced variants with the Broad Lookup API
+- [x] Compare batch-1024 SNVs with 10,000 deterministic official outputs
+- [x] Complete the 999,999-record current-source SNV production canary
 
 ## Engineering
 
@@ -34,6 +36,7 @@
 - [x] Broad validation fails if any requested row is not compared
 - [x] Current runtime manifest confirms `tf32_enabled=false`
 - [x] Secret scan passes
+- [x] Verify million-record SNV BGZF, tabix, counts, checksum, and restart skip
 
 ## Documentation
 

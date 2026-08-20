@@ -1,4 +1,38 @@
-# Validation report — 0.1.0rc3
+# Validation report — 0.1.0rc4
+
+## SNV production canary
+
+- Date: 2026-08-20
+- Public source commit: `a145b3c6aeee8fe020033a8a6a0e71816772e73a`
+- Platform: Slurm GPU cluster
+- GPU: NVIDIA A100-SXM4-80GB
+- Parameters: `D=500`, `M=1`, batch 1024, chunk size 16,384
+- Annotation: MANE Select v1.5
+
+The current public source passed every SNV production-canary gate:
+
+| Check | Scope | Result |
+|---|---:|---:|
+| Current generator versus prior generator | 999,999 SNVs | byte-identical |
+| Batch-1024 versus deterministic official output | 10,000 SNVs | exact |
+| Current scorer versus prior million-record pilot | 999,999 SNVs | byte-identical |
+| Input/output record count | 999,999 / 999,999 | passed |
+| BGZF and tabix index | one production shard | passed |
+| Completion fingerprint and restart | one production shard | verified skip |
+
+The production-sized run completed in 3:18:30, with 11,889.2 application
+seconds and 84.11 SNVs/s. The input and output SHA-256 values were:
+
+- input:
+  `64c5bc10baf8bf7ddfaf2de9ed383d6ec622ba2200ff229732e41e26ae2ae0db`
+- output:
+  `7bc6107feee10c85b719cf15a11a1c6c1f16d5bbbc12d7de31bc7b8d3811b338`
+
+The official comparison found zero record-identity, annotation-entry, score,
+or position differences and a maximum score difference of 0.00. The public
+machine-readable summary is
+`validation/results/current_mane_v1.5/snv_production_canary.json`. The indel
+production canary remains pending.
 
 ## Current release validation
 

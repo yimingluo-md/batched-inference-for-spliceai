@@ -1,10 +1,11 @@
 # Validation protocol
 
-> **Current status (2026-07-28):** Current-code validation passed. The optimized
+> **Current status (2026-08-20):** Current-code validation passed. The optimized
 > runner and official comparator used the same deterministic TensorFlow/cuDNN
 > policy with TF32 disabled. The evidence covers 50,000 optimized records,
 > 20,000 exact official comparisons, byte-identical repeats, a restart smoke
-> test, and 64 exact Broad Lookup API comparisons.
+> test, 64 exact Broad Lookup API comparisons, and a current-public-source
+> 999,999-record SNV production canary at batch 1024.
 
 ## Release gates
 
@@ -79,6 +80,13 @@ values:
 
 - SNV: `042bd9a286445eecda74488328ddafbb39b2b4d6f9cdb827347b6ed011d41339`
 - indel: `f93aced1dd78249e91d147882fbe5a506436e10a2b7f4ac8d0499e082e60c787`
+
+The 2026-08-20 SNV production canary extended these gates to batch 1024. All
+10,000 stratified SNVs were exactly identical to the deterministic official
+output. The production-sized shard retained all 999,999 records, completed in
+3:18:30 at 84.11 SNVs/s, reproduced the prior pilot byte-for-byte, and passed
+BGZF, tabix, checksum, completion-fingerprint, and restart-skip checks. See
+`validation/results/current_mane_v1.5/snv_production_canary.json`.
 
 Machine-readable summaries, the runtime manifest, the 64-variant query
 manifest, and field-level comparison evidence are in

@@ -1,6 +1,6 @@
 # Batched inference for SpliceAI
 
-> **Scoring engine validated; full-universe production pilot pending**
+> **SNV production canary passed; indel production pilot pending**
 
 Batched inference for SpliceAI is a high-throughput VCF runner for a
 **separately installed** SpliceAI 1.3.1 runtime. It keeps the five-model
@@ -40,7 +40,7 @@ transcripts.
 
 - Implementation: upstream-compatibility and orchestration corrections applied
 - Current scoring-engine scientific validation: passed
-- Recommended A100 batch size: 256
+- Validated SNV-production A100 batch size: 1024
 - Current 50,000-record deterministic repeat test: byte-identical
 - Historical 4,000-record batch-128 versus batch-256 comparison: exact
 - Current 50,000-record stratified optimized validation: passed
@@ -48,16 +48,21 @@ transcripts.
 - Current production annotation: MANE Select v1.5, checksum pinned
 - Current MANE v1.5 versus Broad Lookup API: 64/64 exact
 - Current Slurm scoring completion/restart smoke test: passed
-- Reference-derived universe generator: unit-tested; production pilot pending
+- Reference-derived SNV universe: 999,999-record production canary passed
+- Current SNV production output: byte-identical to the prior million-record pilot
+- Reference-derived indel universe: production pilot pending
 - License: GPL-3.0-or-later
 - Current-tree licensing and provenance audit: passed
 
 The current validation uses deterministic TensorFlow/cuDNN settings with TF32
 disabled. It includes 50,000 optimized records, an exact 20,000-record
 official-CLI comparison, byte-identical repeat outputs, and 64 exact external
-Broad Lookup API comparisons. These results validate the scoring engine. The
-new full-universe generation and orchestration path still requires the
-documented production-sized SNV and indel pilots before global submission.
+Broad Lookup API comparisons. The current public source also passed a
+999,999-record SNV production canary at batch 1024, including exact agreement
+with the deterministic official comparator on 10,000 stratified SNVs,
+byte-identical agreement with the prior million-record pilot, indexed-output
+and record-count gates, and restart skipping. SNV production is ready for a
+staged launch; the indel production pilot remains pending.
 
 See [VALIDATION.md](docs/VALIDATION.md), [BENCHMARKS.md](docs/BENCHMARKS.md),
 [the validation report](validation/VALIDATION_REPORT.md), and
@@ -78,7 +83,7 @@ See [VALIDATION.md](docs/VALIDATION.md), [BENCHMARKS.md](docs/BENCHMARKS.md),
 - A separately installed SpliceAI 1.3.1 runtime
 - TensorFlow compatible with that SpliceAI installation
 - Python 3.7+ (3.9+ recommended outside legacy containers)
-- `numpy`, `pysam`, `bgzip`, and `tabix`
+- `numpy`, `pysam`, `bcftools`, `bgzip`, and `tabix`
 - Reference FASTA with `.fai`
 - `grch37`, `grch38`, or a SpliceAI-compatible custom annotation file
 
@@ -117,6 +122,8 @@ tabix -p vcf output.vcf.gz
 
 For the scientific production run, replace `grch38` with the path to the
 validated MANE Select v1.5 SpliceAI annotation.
+The validated SNV production configuration uses `--batch-size 1024` and
+`--chunk-records 16384` on an A100 80 GB GPU.
 
 Generate that annotation from the official NCBI Ensembl GTF:
 

@@ -28,8 +28,8 @@ abstract-syntax-tree dumps produced with Python 3.9
 | `2b6b4ce` | `official.py` | `38092c96ea4ee623e71b140f64a538828200b1c975a2b3ecc3df55d5fc888672` | `38092c96ea4ee623e71b140f64a538828200b1c975a2b3ecc3df55d5fc888672` |
 
 Some byte-level hashes differ only because the source was subsequently
-formatted. AST equality is useful evidence of unchanged executable structure,
-but it is not a substitute for a future production rerun. The new
-reference-derived universe generator and full-universe orchestration are
-unit-tested and require the documented production-sized pilot before global
-submission.
+formatted. The public source at commit
+`a145b3c6aeee8fe020033a8a6a0e71816772e73a` was subsequently exercised in the
+2026-08-20 SNV production canary. Its generator recreated the 999,999-record
+input byte-for-byte, and its scorer recreated the prior million-record output
+byte-for-byte at batch 1024. The indel production canary remains pending.

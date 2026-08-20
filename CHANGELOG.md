@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Completed the current-public-source SNV production canary: a 999,999-record
+  batch-1024 run was byte-identical to the prior million-record pilot, matched
+  the deterministic official comparator exactly on 10,000 stratified SNVs,
+  and passed BGZF, tabix, record-count, checksum, and restart-skip gates.
 - Renamed the project to "Batched inference for SpliceAI" while preserving the
   `spliceai-batched` Python distribution and command names for compatibility.
 - Expanded the licensing audit to cover source ancestry, later Illumina

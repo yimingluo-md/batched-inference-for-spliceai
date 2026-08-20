@@ -100,6 +100,13 @@ spliceai-batched-universe finalize \
 ```
 
 The resulting manifest is accepted directly by `scripts/slurm/submit_array.sh`.
-Run one SNV and one indel shard first to measure actual generation speed,
-compressed input size, output expansion, node-local scratch use, and
-end-to-end A100 throughput before submitting the full arrays.
+
+## Production-canary status
+
+The SNV production canary passed on 2026-08-20. The current public generator
+recreated the first 999,999-record shard byte-for-byte, and the current public
+scorer produced a byte-identical batch-1024 output relative to the prior
+million-record pilot. BGZF integrity, tabix indexing, record counts, asset and
+output checksums, completion fingerprints, and restart skipping all passed.
+The indel production canary remains pending and must pass the same gates before
+the indel array is submitted.

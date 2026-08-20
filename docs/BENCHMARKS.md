@@ -43,6 +43,40 @@ Current MANE Select v1.5 validation on matched 10,000-record samples measured
 and 25.6× for indels (102.01 versus 2,606.60 seconds). Both optimized outputs
 were exactly identical to the deterministic official SpliceAI 1.3.1 outputs.
 
+## SNV production canary
+
+The 2026-08-20 current-public-source canary used MANE Select v1.5, `D=500`,
+`M=1`, batch 1024, chunk size 16,384, and an A100 80 GB GPU. It processed
+999,999 reference-derived SNVs in 11,889.2 application seconds (84.11/s) and
+completed the full indexed, checksummed shard in 3:18:30. The 10,000-record
+stratified batch-1024 output was exactly identical to the deterministic
+official SpliceAI 1.3.1 output: zero record, annotation, score, or position
+differences.
+
+The canary input and output were byte-identical to the earlier million-record
+pilot:
+
+- input SHA-256:
+  `64c5bc10baf8bf7ddfaf2de9ed383d6ec622ba2200ff229732e41e26ae2ae0db`
+- output SHA-256:
+  `7bc6107feee10c85b719cf15a11a1c6c1f16d5bbbc12d7de31bc7b8d3811b338`
+
+The immutable SNV plan contains 3,419 shards and 3,409,598,145 records.
+At the measured canary rate, the idealized total is approximately 11,261
+A100-hours (1.29 A100 GPU-years):
+
+| Concurrent A100 GPUs | Idealized SNV compute time |
+|---:|---:|
+| 16 | 29.3 days |
+| 32 | 14.7 days |
+| 64 | 7.3 days |
+| 96 | 4.9 days |
+
+Measured compression extrapolates to approximately 8.2 GB of generated SNV
+inputs and 35.7 GB of scored outputs, excluding indexes, metadata, logs,
+temporary copies, retries, and safety margin. Queueing, fair-share, and
+shared-filesystem contention are also excluded from the compute projection.
+
 ## Legacy-resource projection
 
 The following counts came from the 2019 precomputed input resources:
@@ -69,13 +103,14 @@ retries, validation, and final merging.
 
 The production run now uses a clean, reference-derived MANE Select v1.5
 variant universe. Its immutable generation plan supplies the authoritative
-record counts. Recalculate the GPU-year and storage projections from that plan
-and from one production-sized SNV and indel pilot before global submission;
-do not treat the legacy-resource counts above as the final production totals.
+record counts. The authoritative SNV projection is reported above. Recalculate
+the indel projection from its plan and production-sized pilot before the indel
+array is submitted; do not treat the legacy-resource counts as final.
 
 ## Interpretation
 
 Do not compare the small stock wall-time rate directly with a production shard
 without accounting for startup amortization. Production shards should contain
-approximately 1–5 million records and should be benchmarked under the intended
-concurrency before global submission.
+approximately 1–5 million records. Start production in bounded waves so
+concurrency and shared-filesystem behavior are measured before the full array
+is released.
