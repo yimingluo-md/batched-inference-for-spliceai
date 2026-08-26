@@ -181,6 +181,30 @@ def test_submit_array_rejects_invalid_staged_range(tmp_path) -> None:
     assert not result.exists()
 
 
+def test_submit_array_rejects_missing_runner_from_slurm_spool_copy(
+    tmp_path: Path,
+) -> None:
+    environment, result = submit_environment(tmp_path)
+    environment.pop("RUNNER")
+    spool_submit = tmp_path / "slurm-spool" / "submit_array.sh"
+    spool_submit.parent.mkdir()
+    spool_submit.write_bytes(SUBMIT.read_bytes())
+    spool_submit.chmod(0o755)
+
+    completed = subprocess.run(
+        ["bash", str(spool_submit)],
+        env=environment,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+
+    assert completed.returncode != 0
+    assert "RUNNER is not executable" in completed.stderr
+    assert "Set RUNNER to an absolute" in completed.stderr
+    assert not result.exists()
+
+
 def test_submit_array_runner_tree_hash_includes_nested_modules(
     tmp_path: Path,
 ) -> None:

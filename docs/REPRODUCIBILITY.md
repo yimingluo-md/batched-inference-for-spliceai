@@ -57,6 +57,11 @@ TF32 before loading TensorFlow or SpliceAI.
 `submit_array.sh` derives `runner_version` and `git_commit` from the checked-out
 runner when possible and passes them to every shard. Set `RUNNER_VERSION` and
 `GIT_COMMIT` explicitly when submitting a copied runner outside its repository.
+When `submit_array.sh` is itself launched as a Slurm job, also set `RUNNER` to
+the absolute shared-filesystem path of `run_shard.sh`. Slurm executes a private
+spool copy of a submitted script, so a sibling path derived from that copy is
+not stable. The submitter validates both runner executables before allocating
+any GPU tasks.
 The package-tree SHA-256 is part of the restart fingerprint, so modifying an
 imported runner module invalidates an older completion marker. The runner also
 binds its package, reference, annotation, and node-local working directory into

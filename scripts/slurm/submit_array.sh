@@ -12,11 +12,22 @@ set -euo pipefail
 : "${SPLICEAI_BATCHED_SCRIPT:?Set SPLICEAI_BATCHED_SCRIPT}"
 
 RUNNER="${RUNNER:-$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)/run_shard.sh}"
+if [[ ! -x "${RUNNER}" ]]; then
+    printf 'RUNNER is not executable: %s\n' "${RUNNER}" >&2
+    printf 'Set RUNNER to an absolute run_shard.sh path when invoking this submitter from another Slurm job.\n' >&2
+    exit 1
+fi
+RUNNER="$(readlink -f -- "${RUNNER}")"
 TASK_RUNNER="$(
     cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &&
         pwd -P
 )/run_manifest_task.sh"
 TASK_RUNNER="${SLURM_TASK_RUNNER:-${TASK_RUNNER}}"
+if [[ ! -x "${TASK_RUNNER}" ]]; then
+    printf 'Slurm task runner is not executable: %s\n' "${TASK_RUNNER}" >&2
+    exit 1
+fi
+TASK_RUNNER="$(readlink -f -- "${TASK_RUNNER}")"
 REFERENCE="$(readlink -f -- "${REFERENCE}")"
 if [[ -f "${ANNOTATION}" ]]; then
     ANNOTATION="$(readlink -f -- "${ANNOTATION}")"
