@@ -1,5 +1,29 @@
 # Validation report — 0.1.0rc4
 
+## Completed SNV production dataset
+
+- Release date: 2026-10-03
+- Public source commit: `a145b3c6aeee8fe020033a8a6a0e71816772e73a`
+- Parameters: MANE Select v1.5, GRCh38, `D=500`, `M=1`
+- Records: 3,408,398,835
+- Source shards: 3,419
+- Public files: 24 bgzip-compressed, tabix-indexed chromosome VCFs
+- Missing SpliceAI annotations: 0
+
+The full production output passed shard accounting, record-count, BGZF,
+tabix, checksum, and chromosome-package audits. Sanitized public VCF headers
+contain no execution-host paths, and every released VCF record body was
+verified byte-for-byte against the audited production source.
+
+A chromosome-balanced sample of 120 production SNVs was compared with Broad
+SpliceAI Lookup. All 120 queries were numerically compared and matched the
+intended MANE Select response. Delta positions matched exactly; the maximum
+absolute delta-score difference was 0.005, consistent with two-decimal VCF
+scores versus Broad's three-decimal output.
+
+Dataset, checksums, release manifest, and usage documentation:
+<https://huggingface.co/datasets/luoyiming1991/spliceai-mane-v1.5-d500-m1-snv>
+
 ## SNV production canary
 
 - Date: 2026-08-20

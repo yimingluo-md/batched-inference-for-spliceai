@@ -1,6 +1,6 @@
 # Batched inference for SpliceAI
 
-> **SNV production canary passed; indel production pilot pending**
+> **SNV production dataset released; indel production pilot pending**
 
 Batched inference for SpliceAI is a high-throughput VCF runner for a
 **separately installed** SpliceAI 1.3.1 runtime. It keeps the five-model
@@ -10,6 +10,15 @@ and transcript.
 
 This is an independent research project. It is not affiliated with or endorsed
 by Illumina.
+
+## Precomputed SNV dataset
+
+The completed MANE Select v1.5 SNV resource is publicly available from
+[Hugging Face](https://huggingface.co/datasets/luoyiming1991/spliceai-mane-v1.5-d500-m1-snv).
+It contains 3,408,398,835 masked SpliceAI 1.3.1 SNV records computed with
+`D=500` and `M=1`, distributed as 24 bgzip-compressed, tabix-indexed VCFs.
+The dataset card provides chromosome-level downloads, usage examples,
+checksums, release manifests, licensing, limitations, and validation evidence.
 
 ## Motivation
 
@@ -46,10 +55,14 @@ transcripts.
 - Current 50,000-record stratified optimized validation: passed
 - Current 20,000-record comparison with the official CLI: exact
 - Current production annotation: MANE Select v1.5, checksum pinned
-- Current MANE v1.5 versus Broad Lookup API: 64/64 exact
+- Current code-validation MANE v1.5 versus Broad Lookup API: 64/64 exact
 - Current Slurm scoring completion/restart smoke test: passed
 - Reference-derived SNV universe: 999,999-record production canary passed
 - Current SNV production output: byte-identical to the prior million-record pilot
+- Completed SNV release: 3,408,398,835 records across 24 indexed VCFs
+- Production-dataset Broad validation: 120/120 compared, no position differences,
+  maximum score difference 0.005
+- Public dataset: [Hugging Face release](https://huggingface.co/datasets/luoyiming1991/spliceai-mane-v1.5-d500-m1-snv)
 - Reference-derived indel universe: production pilot pending
 - License: GPL-3.0-or-later
 - Current-tree licensing and provenance audit: passed
@@ -61,8 +74,10 @@ Broad Lookup API comparisons. The current public source also passed a
 999,999-record SNV production canary at batch 1024, including exact agreement
 with the deterministic official comparator on 10,000 stratified SNVs,
 byte-identical agreement with the prior million-record pilot, indexed-output
-and record-count gates, and restart skipping. SNV production is ready for a
-staged launch; the indel production pilot remains pending.
+and record-count gates, and restart skipping. The subsequent full production
+run and release audit completed successfully, and the chromosome-level SNV
+dataset is now public on Hugging Face. The indel production pilot remains
+pending.
 
 See [VALIDATION.md](docs/VALIDATION.md), [BENCHMARKS.md](docs/BENCHMARKS.md),
 [the validation report](validation/VALIDATION_REPORT.md), and

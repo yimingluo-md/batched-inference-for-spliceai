@@ -1,11 +1,14 @@
 # Validation protocol
 
-> **Current status (2026-08-20):** Current-code validation passed. The optimized
+> **Current status (2026-10-03):** Current-code validation and the complete SNV
+> production release audit passed. The optimized
 > runner and official comparator used the same deterministic TensorFlow/cuDNN
 > policy with TF32 disabled. The evidence covers 50,000 optimized records,
 > 20,000 exact official comparisons, byte-identical repeats, a restart smoke
 > test, 64 exact Broad Lookup API comparisons, and a current-public-source
-> 999,999-record SNV production canary at batch 1024.
+> 999,999-record SNV production canary at batch 1024. The released dataset
+> contains 3,408,398,835 SNVs and passed a separate 120-variant production
+> comparison with Broad Lookup.
 
 ## Release gates
 
@@ -92,6 +95,25 @@ Machine-readable summaries, the runtime manifest, the 64-variant query
 manifest, and field-level comparison evidence are in
 `validation/results/current_mane_v1.5/`. Raw API response caches are excluded
 because the service's output-redistribution terms are not explicit.
+
+## Completed SNV production release
+
+The full MANE Select v1.5 SNV production run and release audit completed on
+2026-10-03. The public dataset contains 3,408,398,835 records in 24
+bgzip-compressed, tabix-indexed chromosome VCFs. All 3,419 production shards
+were accounted for, no SpliceAI annotations were missing, and every public VCF
+record body was verified byte-for-byte against the audited production source.
+
+A separate chromosome-balanced sample of 120 production SNVs was compared
+with Broad SpliceAI Lookup using GRCh38, `D=500`, and `M=1`. All 120 queries
+were numerically compared and matched the intended MANE Select response. There
+were no delta-position differences; the maximum absolute delta-score
+difference was 0.005, consistent with the released VCF's two-decimal score
+representation versus Broad's three-decimal output.
+
+The release, checksums, machine-readable manifest, dataset card, and usage
+documentation are available on
+[Hugging Face](https://huggingface.co/datasets/luoyiming1991/spliceai-mane-v1.5-d500-m1-snv).
 
 ## Historical results
 

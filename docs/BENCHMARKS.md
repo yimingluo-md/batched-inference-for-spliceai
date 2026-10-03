@@ -61,8 +61,8 @@ pilot:
 - output SHA-256:
   `7bc6107feee10c85b719cf15a11a1c6c1f16d5bbbc12d7de31bc7b8d3811b338`
 
-The immutable SNV plan contains 3,419 shards and 3,409,598,145 records.
-At the measured canary rate, the idealized total is approximately 11,261
+The completed SNV release contains 3,419 source shards and 3,408,398,835
+records. At the measured canary rate, the idealized total is approximately 11,256
 A100-hours (1.29 A100 GPU-years):
 
 | Concurrent A100 GPUs | Idealized SNV compute time |
@@ -72,10 +72,11 @@ A100-hours (1.29 A100 GPU-years):
 | 64 | 7.3 days |
 | 96 | 4.9 days |
 
-Measured compression extrapolates to approximately 8.2 GB of generated SNV
-inputs and 35.7 GB of scored outputs, excluding indexes, metadata, logs,
-temporary copies, retries, and safety margin. Queueing, fair-share, and
-shared-filesystem contention are also excluded from the compute projection.
+The released chromosome VCFs total 34.32 GB (31.96 GiB), excluding indexes and
+metadata. The release is available on
+[Hugging Face](https://huggingface.co/datasets/luoyiming1991/spliceai-mane-v1.5-d500-m1-snv).
+Queueing, fair-share, and shared-filesystem contention remain excluded from
+the compute projection.
 
 ## Legacy-resource projection
 

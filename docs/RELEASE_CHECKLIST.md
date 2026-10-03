@@ -16,6 +16,8 @@
 - [x] Compare 64 balanced variants with the Broad Lookup API
 - [x] Compare batch-1024 SNVs with 10,000 deterministic official outputs
 - [x] Complete the 999,999-record current-source SNV production canary
+- [x] Audit the complete 3,408,398,835-record SNV production run
+- [x] Compare 120 production SNVs with Broad Lookup
 
 ## Engineering
 
@@ -61,6 +63,7 @@
 ## Publication
 
 - [x] Public GitHub repository created
+- [x] Public SNV dataset released on Hugging Face with checksums and manifest
 - [x] Tagged release candidate created
 - [ ] Zenodo integration enabled
 - [ ] DOI minted

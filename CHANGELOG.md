@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Released the audited 3,408,398,835-record MANE Select v1.5 SNV dataset as
+  24 indexed chromosome VCFs on Hugging Face, with checksums, a release
+  manifest, usage documentation, and a 120-variant Broad Lookup comparison.
 - Made nested Slurm submissions fail before GPU allocation when the shard
   runner resolves to a transient or otherwise non-executable path.
 - Completed the current-public-source SNV production canary: a 999,999-record

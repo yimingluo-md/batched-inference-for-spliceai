@@ -108,5 +108,9 @@ recreated the first 999,999-record shard byte-for-byte, and the current public
 scorer produced a byte-identical batch-1024 output relative to the prior
 million-record pilot. BGZF integrity, tabix indexing, record counts, asset and
 output checksums, completion fingerprints, and restart skipping all passed.
+
+The subsequent full SNV production run completed with 3,408,398,835 records
+across 3,419 source shards. The audited chromosome-level release is available
+on [Hugging Face](https://huggingface.co/datasets/luoyiming1991/spliceai-mane-v1.5-d500-m1-snv).
 The indel production canary remains pending and must pass the same gates before
 the indel array is submitted.
