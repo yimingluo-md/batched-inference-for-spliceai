@@ -1,6 +1,6 @@
 # Batched inference for SpliceAI
 
-> **SNV production dataset released; indel production pilot pending**
+> **Project complete — MANE Select v1.5 SNV dataset released**
 
 Batched inference for SpliceAI is a high-throughput VCF runner for a
 **separately installed** SpliceAI 1.3.1 runtime. It keeps the five-model
@@ -19,6 +19,9 @@ It contains 3,408,398,835 masked SpliceAI 1.3.1 SNV records computed with
 `D=500` and `M=1`, distributed as 24 bgzip-compressed, tabix-indexed VCFs.
 The dataset card provides chromosome-level downloads, usage examples,
 checksums, release manifests, licensing, limitations, and validation evidence.
+
+The completed project covers SNVs only. Indel production is outside the final
+project scope, and no indel dataset is planned.
 
 ## Motivation
 
@@ -42,8 +45,7 @@ report predicted splice-site changes and may improve sensitivity to clinically
 relevant distal events ([Pitsava et
 al.](https://doi.org/10.1016/j.gim.2025.101574)). This project therefore
 enables reproducible, high-throughput generation of masked (`M=1`), `D=500`
-SpliceAI scores for all SNVs and small indels using current MANE Select v1.5
-transcripts.
+SpliceAI scores for all eligible SNVs within MANE Select v1.5 transcript spans.
 
 ## Status
 
@@ -63,7 +65,7 @@ transcripts.
 - Production-dataset Broad validation: 120/120 compared, no position differences,
   maximum score difference 0.005
 - Public dataset: [Hugging Face release](https://huggingface.co/datasets/luoyiming1991/spliceai-mane-v1.5-d500-m1-snv)
-- Reference-derived indel universe: production pilot pending
+- Project scope: SNV production complete; no indel dataset planned
 - License: GPL-3.0-or-later
 - Current-tree licensing and provenance audit: passed
 
@@ -76,8 +78,9 @@ with the deterministic official comparator on 10,000 stratified SNVs,
 byte-identical agreement with the prior million-record pilot, indexed-output
 and record-count gates, and restart skipping. The subsequent full production
 run and release audit completed successfully, and the chromosome-level SNV
-dataset is now public on Hugging Face. The indel production pilot remains
-pending.
+dataset is now public on Hugging Face. This completes the project's SNV
+production and publication scope. Earlier indel software-validation results
+remain documented as engineering evidence.
 
 See [VALIDATION.md](docs/VALIDATION.md), [BENCHMARKS.md](docs/BENCHMARKS.md),
 [the validation report](validation/VALIDATION_REPORT.md), and
@@ -173,11 +176,9 @@ spliceai-batched-universe plan \
 ```
 
 The defined SNV universe contains all three non-reference alleles at each
-eligible base. The bounded indel universe mirrors the 2019 precomputed
-resource: four single-base insertions and deletions of 1–4 bases per eligible
-anchor. Create the indel plan with `--kind indel`; keeping the two classes in
-separate plans makes large Slurm arrays easier to stage. Generated VCFs contain
-no inherited `SpliceAI` annotation.
+eligible base. Generated VCFs contain no inherited `SpliceAI` annotation.
+The software retains bounded-indel generation support, but that capability
+is outside the completed dataset project's scope.
 
 See [VARIANT_UNIVERSE.md](docs/VARIANT_UNIVERSE.md) for the exact definition,
 parallel generation workflow, completion checks, and scoring-manifest command.

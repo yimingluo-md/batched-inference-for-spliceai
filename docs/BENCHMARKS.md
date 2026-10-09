@@ -104,9 +104,9 @@ retries, validation, and final merging.
 
 The production run now uses a clean, reference-derived MANE Select v1.5
 variant universe. Its immutable generation plan supplies the authoritative
-record counts. The authoritative SNV projection is reported above. Recalculate
-the indel projection from its plan and production-sized pilot before the indel
-array is submitted; do not treat the legacy-resource counts as final.
+record counts. The SNV projection is reported above. The indel projections
+are historical estimates only: indel production is outside the completed
+project's scope, and no indel dataset is planned.
 
 ## Interpretation
 

@@ -1,5 +1,8 @@
 # Release checklist
 
+Project complete as of 2026-10-09: the SNV dataset and source code are public.
+Indel production is outside the final project scope; no indel dataset is planned.
+
 ## Scientific validation
 
 - [x] Repeat the 50,000-record stratified optimized run on the corrected code
@@ -65,6 +68,9 @@
 - [x] Public GitHub repository created
 - [x] Public SNV dataset released on Hugging Face with checksums and manifest
 - [x] Tagged release candidate created
+
+## Optional archival follow-up (not required for project completion)
+
 - [ ] Zenodo integration enabled
 - [ ] DOI minted
-- [ ] Release archived with checksums
+- [ ] Separate archival deposit with checksums

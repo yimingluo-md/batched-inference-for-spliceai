@@ -55,8 +55,9 @@ seconds and 84.11 SNVs/s. The input and output SHA-256 values were:
 The official comparison found zero record-identity, annotation-entry, score,
 or position differences and a maximum score difference of 0.00. The public
 machine-readable summary is
-`validation/results/current_mane_v1.5/snv_production_canary.json`. The indel
-production canary remains pending.
+`validation/results/current_mane_v1.5/snv_production_canary.json`. The project
+is complete with the published SNV dataset; indel production is outside its
+final scope. The earlier indel validation below documents software behavior.
 
 ## Current release validation
 

@@ -7,6 +7,10 @@ This prevents their coordinates, alleles, gene annotations, or existing
 
 ## Scope
 
+The project is complete with the published SNV dataset. Indel production is
+outside the final scope; no indel dataset is planned. The software's existing
+bounded-indel capability is documented below for reference.
+
 Eligible anchors are A, C, G, or T bases in the union of the half-open
 transcript spans in the converted MANE Select v1.5 annotation. Overlapping
 transcripts are merged, so a genomic variant is emitted once; the scorer can
@@ -28,8 +32,8 @@ The generator intentionally does not add a `SpliceAI` INFO header or value.
 
 ## Plan
 
-Create separate immutable SNV and indel plans with approximately one million
-records per shard:
+To reproduce the completed SNV workflow, create an immutable plan with
+approximately one million records per shard:
 
 ```bash
 spliceai-batched-universe plan \
@@ -41,16 +45,6 @@ spliceai-batched-universe plan \
   --target-records 1000000 \
   --kind snv \
   --output snv.plan.tsv
-
-spliceai-batched-universe plan \
-  --annotation MANE.GRCh38.v1.5.primary.spliceai.txt \
-  --annotation-release 1.5 \
-  --annotation-sha256 e323dddd489bcde6b5016776ccb1dd6955bb62c5af576c120f7b9815be2bdd53 \
-  --reference genome.fa \
-  --reference-sha256 d2b7be348fb20af46461855faec64dfbd21532620bd125783df050180446055e \
-  --target-records 1000000 \
-  --kind indel \
-  --output indel.plan.tsv
 ```
 
 The plan records the exact reference and annotation checksums, merged MANE
@@ -76,7 +70,7 @@ export MAX_CONCURRENT=16
 scripts/slurm/submit_universe.sh
 ```
 
-Submit the SNV and indel plans separately. If a plan is larger than the
+If the SNV plan is larger than the
 site's permitted Slurm array size, set `ARRAY_START` and `ARRAY_END` and submit
 it in non-overlapping ranges. The same variables are supported by the GPU
 array submitter.
@@ -101,7 +95,7 @@ spliceai-batched-universe finalize \
 
 The resulting manifest is accepted directly by `scripts/slurm/submit_array.sh`.
 
-## Production-canary status
+## Completed production and canary evidence
 
 The SNV production canary passed on 2026-08-20. The current public generator
 recreated the first 999,999-record shard byte-for-byte, and the current public
@@ -112,5 +106,5 @@ output checksums, completion fingerprints, and restart skipping all passed.
 The subsequent full SNV production run completed with 3,408,398,835 records
 across 3,419 source shards. The audited chromosome-level release is available
 on [Hugging Face](https://huggingface.co/datasets/luoyiming1991/spliceai-mane-v1.5-d500-m1-snv).
-The indel production canary remains pending and must pass the same gates before
-the indel array is submitted.
+This completes the project's production scope. No indel production run is
+planned.

@@ -1,5 +1,12 @@
 # Changelog
 
+## Project completion — 2026-10-09
+
+- Completed the project with the published MANE Select v1.5 SNV dataset.
+- Closed the planned indel production work as outside the final scope; no
+  indel dataset is planned. Existing software capabilities and historical
+  validation evidence are retained.
+
 ## Unreleased
 
 - Released the audited 3,408,398,835-record MANE Select v1.5 SNV dataset as

@@ -10,6 +10,10 @@
 > contains 3,408,398,835 SNVs and passed a separate 120-variant production
 > comparison with Broad Lookup.
 
+As of 2026-10-09, the project is complete with the published SNV dataset.
+Indel production is outside the final scope, and no indel dataset is planned.
+Earlier indel comparisons remain as evidence of software validation.
+
 ## Release gates
 
 1. Compare at least 10,000 stratified records against the official SpliceAI
