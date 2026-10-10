@@ -23,6 +23,11 @@ checksums, release manifests, licensing, limitations, and validation evidence.
 The completed project covers SNVs only. Indel production is outside the final
 project scope, and no indel dataset is planned.
 
+The [resource analysis package](analysis/snv-resource) provides a full-release
+descriptive score audit, multi-gene and distal-event summaries, and measured
+production timing. It includes reproducible analysis code, counter tests, and
+sanitized machine-readable evidence without rerunning model inference.
+
 ## Motivation
 
 Illumina's 2019 GRCh38 precomputed SpliceAI scores enable efficient annotation

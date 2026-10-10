@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "records": 3408398835,
+  "parent_shards": 3419,
+  "accepted_scoring_jobs": 3449,
+  "accepted_jobs": {
+    "accounting_rows": 3449,
+    "gpu_seconds": 40255206,
+    "gpu_hours": 11182.001666666667,
+    "states": {
+      "COMPLETED": 3449
+    }
+  },
+  "other_production_attempts": {
+    "accounting_rows": 3383,
+    "gpu_seconds": 306679,
+    "gpu_hours": 85.18861111111111,
+    "states": {
+      "FAILED": 3373,
+      "OUT_OF_MEMORY": 5,
+      "TIMEOUT": 5
+    }
+  },
+  "chunk_equivalence_control": {
+    "accounting_rows": 1,
+    "gpu_seconds": 930,
+    "gpu_hours": 0.25833333333333336,
+    "states": {
+      "COMPLETED": 1
+    }
+  },
+  "production_including_retries_excluding_control": {
+    "accounting_rows": 6832,
+    "gpu_seconds": 40561885,
+    "gpu_hours": 11267.190277777778,
+    "states": {
+      "COMPLETED": 3449,
+      "FAILED": 3373,
+      "OUT_OF_MEMORY": 5,
+      "TIMEOUT": 5
+    }
+  },
+  "all_scoped_gpu_jobs_including_control": {
+    "accounting_rows": 6833,
+    "gpu_seconds": 40562815,
+    "gpu_hours": 11267.448611111111,
+    "states": {
+      "COMPLETED": 3450,
+      "FAILED": 3373,
+      "OUT_OF_MEMORY": 5,
+      "TIMEOUT": 5
+    }
+  },
+  "accepted_application_seconds": 40196769.6,
+  "accepted_command_wall_seconds": 40242888.65,
+  "effective_records_per_allocated_gpu_second_accepted_jobs": 84.66976507336716,
+  "effective_records_per_allocated_gpu_second_all_production_attempts": 84.02959662747429,
+  "calendar": {
+    "first_gpu_job_start": "2026-08-20T17:20:22-04:00",
+    "last_accepted_gpu_job_end": "2026-10-03T02:29:32-04:00",
+    "elapsed_seconds": 3748150.0,
+    "elapsed_days": 43.38136574074074,
+    "mean_allocated_gpus_including_control": 10.822089564184997
+  },
+  "execution_profiles": [
+    {
+      "batch_size": 256,
+      "chunk_records": 4096,
+      "accepted_scoring_jobs": 561,
+      "full_shards": 561,
+      "parts": 0,
+      "records": 557973270,
+      "scheduler_gpu_hours": 1839.7372222222223
+    },
+    {
+      "batch_size": 1024,
+      "chunk_records": 4096,
+      "accepted_scoring_jobs": 6,
+      "full_shards": 0,
+      "parts": 6,
+      "records": 393216,
+      "scheduler_gpu_hours": 21.09138888888889
+    },
+    {
+      "batch_size": 1024,
+      "chunk_records": 16384,
+      "accepted_scoring_jobs": 2882,
+      "full_shards": 2856,
+      "parts": 26,
+      "records": 2850032349,
+      "scheduler_gpu_hours": 9321.173055555555
+    }
+  ],
+  "max_successful_job_host_rss_gib": 107.11862182617188,
+  "provenance": {
+    "runtime_evidence_sha256": "8f33a7e5c5acdbfcda8ea573cb3df6147ad39b3e20817d0ff040f481d29b047a",
+    "scheduler_accounting_sha256": "6c72a46a3e3952d67c8aaa069e241a8d365d0211fc9f0f74354344074e009bbc",
+    "accepted_parent_manifest_sha256": "5bb5bd466e8f4fd293961a1c3497e4173b4a0bb9fdb73d6212630c151cc0da22"
+  },
+  "interpretation": "GPU-hours are measured allocated GPU time, not hardware utilization. The scope is production jobs linked to retained logs/submissions/metadata, plus the identified chunk-equivalence control; pilot, earlier scientific validation, CPU generation/packaging, and later manuscript audits are excluded.",
+  "reconstructed_parent_workloads": [
+    {
+      "parent_shard": "snv-001163",
+      "records": 999999,
+      "variant_gene_entries": 7682103,
+      "multigene_records": 670323,
+      "mean_annotations_per_record": 7.682110682110682,
+      "max_genes_per_record": 15,
+      "count_evidence_sha256": "ba34c47f1b2d952db230a70c2f443ae4737e1512f68ef4a3d69b939d7e8d253d",
+      "accepted_vcf_sha256": "f9c0276b206ba93e5ea4b16321b926789bd4be01600977c5fa94874403698a1b"
+    },
+    {
+      "parent_shard": "snv-001164",
+      "records": 999999,
+      "variant_gene_entries": 8237139,
+      "multigene_records": 522648,
+      "mean_annotations_per_record": 8.237147237147237,
+      "max_genes_per_record": 22,
+      "count_evidence_sha256": "26734fe95c198468704e194119640ce805e5c42e1f1a64bce6c1c32fc6046bbb",
+      "accepted_vcf_sha256": "5ed158ba30ac10f4dd2969dcf9be9c4e9f5f62b3e442938810eca02313ab0029"
+    }
+  ]
+}

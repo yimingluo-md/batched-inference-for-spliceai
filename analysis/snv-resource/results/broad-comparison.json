@@ -1,0 +1,75 @@
+{
+  "sets": {
+    "random": {
+      "queries": 96,
+      "unique_genes": 94,
+      "chromosomes": 24,
+      "score_fields_compared": 384,
+      "score_fields_exact": 328,
+      "score_fields_different": 56,
+      "maximum_absolute_score_difference": 0.005,
+      "mean_absolute_score_difference": 0.00029947916666666664,
+      "score_fields_within_0.005": 384,
+      "position_fields_compared": 384,
+      "position_fields_different": 0,
+      "records_max_score_zero": 83,
+      "records_max_score_at_least_0.2": 1,
+      "selection": {
+        "chromosomes": 24,
+        "distinct_genes": 94,
+        "distinct_variants": 96,
+        "maximum_delta_score_distribution": {
+          "gt_0": 13,
+          "gte_0.1": 1,
+          "gte_0.2": 1,
+          "gte_0.5": 0,
+          "maximum": 0.2,
+          "zero": 83
+        },
+        "records": 96,
+        "records_per_chromosome": 4,
+        "sampling_design": "four uniform-without-replacement records per primary chromosome",
+        "seed": 20261003,
+        "source_audit_summary_sha256": "364982c299d1be81238525ff3374b00b13333013cbb899881f56caab085876d6",
+        "status": "selected"
+      }
+    },
+    "highscore": {
+      "queries": 24,
+      "unique_genes": 24,
+      "chromosomes": 24,
+      "score_fields_compared": 96,
+      "score_fields_exact": 51,
+      "score_fields_different": 45,
+      "maximum_absolute_score_difference": 0.005,
+      "mean_absolute_score_difference": 0.00115625,
+      "score_fields_within_0.005": 96,
+      "position_fields_compared": 96,
+      "position_fields_different": 0,
+      "records_max_score_zero": 0,
+      "records_max_score_at_least_0.2": 24,
+      "selection": {
+        "chromosomes": 24,
+        "distinct_genes": 24,
+        "maximum_max_delta_score": 1.0,
+        "minimum_max_delta_score": 0.2,
+        "records": 24,
+        "sampling_design": "one randomly selected qualifying variant-gene pair per primary chromosome from a randomly ordered production shard",
+        "seed": 20261004,
+        "source_audit_summary_sha256": "364982c299d1be81238525ff3374b00b13333013cbb899881f56caab085876d6",
+        "status": "selected",
+        "threshold": 0.2
+      }
+    }
+  },
+  "combined": {
+    "queries": 120,
+    "score_fields_compared": 480,
+    "score_fields_exact": 379,
+    "score_fields_different": 101,
+    "score_fields_within_0.005": 480,
+    "position_fields_compared": 480,
+    "position_fields_different": 0,
+    "maximum_absolute_score_difference": 0.005
+  }
+}
